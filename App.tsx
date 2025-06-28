@@ -14,7 +14,7 @@ const ProfileCard: React.FC = () => (
     </h1>
     <p className="text-lg md:text-xl text-slate-500 mt-1">きじまなる</p>
     <p className="text-lg md:text-xl text-slate-600 mt-2">{PROFILE.title}</p>
-    <p className="mt-4 max-w-2xl text-slate-500">{PROFILE.bio}</p>
+    <p className="mt-4 max-w-2xl text-slate-500 text-base md:text-lg">{PROFILE.bio}</p>
   </header>
 );
 
@@ -107,10 +107,9 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50">
-      <main className="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-white">
+      <main className="w-full px-2 sm:px-4 md:px-8 max-w-full">
         <ProfileCard />
-        
         <div className="w-full">
           <div className="border-b border-slate-200">
             <nav className="-mb-px flex justify-center space-x-2 sm:space-x-4 lg:space-x-6" aria-label="Tabs">
@@ -118,7 +117,7 @@ const App: React.FC = () => {
                 <button
                   key={tab}
                   onClick={() => setActiveTab(tab)}
-                  className={`${
+                  className={`$${
                     activeTab === tab
                       ? 'border-slate-800 text-slate-900'
                       : 'border-transparent text-slate-500 hover:text-slate-700 hover:border-slate-300'
@@ -130,12 +129,10 @@ const App: React.FC = () => {
               ))}
             </nav>
           </div>
-          
           <div>
             {renderTabContent()}
           </div>
         </div>
-
         <footer className="text-center py-10 text-slate-500 text-sm">
           <p>&copy; {new Date().getFullYear()} {PROFILE.name}. All Rights Reserved.</p>
         </footer>
