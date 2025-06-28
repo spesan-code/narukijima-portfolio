@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>パーソナルポートフォリオサイト</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      html, body {
+        background: #fff;
+        color: #111;
+        font-family: 'Inter', 'Helvetica Neue', Arial, 'Yu Gothic', '游ゴシック体', 'YuGothic', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
+        font-size: 18px;
+        letter-spacing: 0.01em;
+        line-height: 1.7;
+        min-height: 100vh;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+        font-weight: 700;
+        color: #111;
+        letter-spacing: 0.01em;
+      }
+      .container, .max-w-5xl, .rounded-lg, .border, .shadow-lg {
+        background: #fff !important;
+        color: #111 !important;
+        border-radius: 16px !important;
+        box-shadow: 0 2px 16px 0 rgba(0,0,0,0.04);
+      }
+      .card, .rounded-md {
+        background: #fff !important;
+        color: #111 !important;
+        border-radius: 12px !important;
+        box-shadow: 0 1px 8px 0 rgba(0,0,0,0.03);
+      }
+      a {
+        color: #0a66c2;
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+      a:hover {
+        color: #004182;
+        text-decoration: underline;
+      }
+      button, .btn {
+        font-family: inherit;
+        font-size: 1rem;
+        border-radius: 8px;
+        background: #111;
+        color: #fff;
+        border: none;
+        padding: 0.7em 1.5em;
+        transition: background 0.2s, color 0.2s;
+        cursor: pointer;
+      }
+      button:hover, .btn:hover {
+        background: #333;
+        color: #fff;
+      }
+      /* 余白やレイアウトをシンプルに */
+      .py-12, .py-16, .py-10, .px-4, .px-6, .px-8, .p-8, .p-10 {
+        padding-top: 2.5rem !important;
+        padding-bottom: 2.5rem !important;
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+      }
+      .text-center {
+        text-align: center;
+      }
+      /* 画像の角丸・影 */
+      .rounded-full {
+        border-radius: 50% !important;
+        box-shadow: 0 2px 16px 0 rgba(0,0,0,0.07);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-slate-50 text-slate-800">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
