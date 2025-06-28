@@ -12,9 +12,9 @@ const ProfileCard: React.FC = () => (
     <h1 className="text-4xl md:text-5xl font-bold text-slate-900">
       {PROFILE.name}
     </h1>
-    <p className="text-lg md:text-xl text-slate-500 mt-1">きじまなる</p>
-    <p className="text-lg md:text-xl text-slate-600 mt-2">{PROFILE.title}</p>
-    <p className="mt-4 max-w-2xl text-slate-500 text-base md:text-lg">{PROFILE.bio}</p>
+    <p className="text-base md:text-lg text-slate-500 mt-1">きじまなる</p>
+    <p className="text-base md:text-lg text-slate-600 mt-2">{PROFILE.title}</p>
+    <p className="mt-4 max-w-2xl text-slate-500 text-sm md:text-base">{PROFILE.bio}</p>
   </header>
 );
 
@@ -50,7 +50,7 @@ const ContactSection: React.FC = () => {
                             value={form.name}
                             onChange={handleChange}
                             required
-                            className="w-full border border-slate-300 rounded-md px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-slate-500"
+                            className="w-full border border-slate-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-slate-500"
                         />
                     </div>
                     <div>
@@ -61,7 +61,7 @@ const ContactSection: React.FC = () => {
                             value={form.email}
                             onChange={handleChange}
                             required
-                            className="w-full border border-slate-300 rounded-md px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-slate-500"
+                            className="w-full border border-slate-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-slate-500"
                         />
                     </div>
                     <div>
@@ -71,11 +71,11 @@ const ContactSection: React.FC = () => {
                             value={form.message}
                             onChange={handleChange}
                             required
-                            rows={5}
-                            className="w-full border border-slate-300 rounded-md px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-slate-500"
+                            rows={4}
+                            className="w-full border border-slate-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-slate-500"
                         />
                     </div>
-                    <button type="submit" className="btn w-full">送信</button>
+                    <button type="submit" className="btn w-full text-sm py-2">送信</button>
                 </form>
             )}
         </div>
