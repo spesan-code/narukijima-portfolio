@@ -43,7 +43,7 @@ export const MailIcon: React.FC<{ className?: string }> = ({ className = "w-6 h-
 export const PROFILE = {
   name: "黄島成",
   title: "革命家",
-  bio: "このサイトは、革命家の黄島成のアプリポートフォリオです。制作したアプリを順次公開していきます。すべてバイブコーディングで作っています。お問い合わせはフォームからお願いします。",
+  bio: "黄島成のアプリポートフォリオサイトです。バイブコーディングで製作したアプリを順次公開していきます。お問い合わせはフォームからお願いします。",
   profileImageUrl: "/profile.png",
   contactEmail: "paws-etch5x@icloud.com"
 };

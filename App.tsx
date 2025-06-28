@@ -3,18 +3,18 @@ import { PROFILE, PROJECTS, MailIcon } from './constants';
 import ProjectCard from './components/ProjectCard';
 
 const ProfileCard: React.FC = () => (
-  <header className="flex flex-col items-center text-center py-12 md:py-16">
+  <header className="flex flex-col items-center text-center py-8 md:py-12">
     <img
       src={PROFILE.profileImageUrl}
       alt={PROFILE.name}
-      className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-white shadow-lg mb-6"
+      className="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover border-4 border-white shadow mb-3"
     />
-    <h1 className="text-4xl md:text-5xl font-bold text-slate-900">
+    <h1 className="text-2xl md:text-3xl font-bold text-slate-900 leading-tight mt-1 mb-0.5">
       {PROFILE.name}
     </h1>
-    <p className="text-base md:text-lg text-slate-500 mt-1">きじまなる</p>
-    <p className="text-base md:text-lg text-slate-600 mt-2">{PROFILE.title}</p>
-    <p className="mt-4 max-w-2xl text-slate-500 text-sm md:text-base">{PROFILE.bio}</p>
+    <p className="text-xs md:text-sm text-slate-500 mb-0.5">きじまなる</p>
+    <p className="text-xs md:text-sm text-slate-600 mb-2">{PROFILE.title}</p>
+    <p className="mt-2 max-w-2xl text-slate-500 text-xs md:text-sm">{PROFILE.bio}</p>
   </header>
 );
 
